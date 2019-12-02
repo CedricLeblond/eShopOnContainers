@@ -15,7 +15,7 @@ trigger:
 jobs:
 - template: ../buildimages.yaml
   parameters:
-    services: ordering.api
+    services: ordering-api
     registryEndpoint: $(registryEndpoint)
     helmfrom: $(Build.SourcesDirectory)/k8s/helm
     helmto: $(Build.ArtifactStagingDirectory)/k8s/helm    
